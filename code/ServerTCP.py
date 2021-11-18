@@ -98,7 +98,7 @@ class AlphaBot(object):                         #classe dove sono definiti i mov
 
     def backward(self,t):
         speedInit=40
-        spped=30
+        speed=30
         if t/4>=1.5:
             tInit=1.5
         else:
@@ -177,7 +177,7 @@ def main():
     s.listen()                                      #si mette in ascolto dei comandi che arrivaranno dal client 
 
     while True:
-        onnection, address=s.accept()   
+        connection, address=s.accept()   
         client=Client_Manager(connection,address)   #creazione del thread
         print(address)                              #facciamo una print per capire quando avviene la connessione con il client 
         client.start()                              #il thread parte 
