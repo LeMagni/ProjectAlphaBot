@@ -32,7 +32,7 @@ che tramite la connessione TCP inviasse al robot che movimento fare.
 In un secondo momento abbiamo creato una seconda tabella sul DB in cui abbiamo inserito dei comandi composti
 formati da una serie di movimenti semplici.
 
-<img src="IMG/sito.jpeg" width="900">
+<img src="IMG/sito.jpeg" width="1000">
 
 
 <img src="IMG/movPers.jpeg" width="300">
