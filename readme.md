@@ -10,15 +10,15 @@ Nome Alunno | Ruolo
 
 
 ### TECNOLOGIE UTILIZZATE: 
+
 Python, Flask, Raspberry, SQLite, AlphaBot
 
-<img src="https://github.com/BitMatt10111/PCTO-BulbsOff/blob/main/Logo%20e%20Immagini%20del%20Gioco/WorkInProgress/img1.png" width="500">
-
 ### DESCRIZIONE:
+
 L'obiettivo di questo progetto era quello di riuscire a controllare un Alphabot tramite un sito web.
 Per lo sviluppo di questo progetto abbiamo instaurato una connessione TCP client-server tramite l'utilizzo di Rapberry-PI e la libreria Flask che permette di creare un web-server.
 
-<img src="https://github.com/BitMatt10111/PCTO-BulbsOff/blob/main/Logo%20e%20Immagini%20del%20Gioco/Icon.png" width="256">
+<img src="https://github.com/LeMagni/ProjectAlphaBot/IMG/sito.jpeg" width="500">
 
 Nella prima pagina del sito bisogna loggarsi in modo che ogni comando che venga mandato sia salvato su un Database e sia riconducibile all'utente che l'ha effettuato.
 
