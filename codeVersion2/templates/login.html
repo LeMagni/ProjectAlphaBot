@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <style>
+      body{
+        background-color: #1F1F1F;
+      }
+      h1{
+        font-size: 100px; 
+        font-family: OCR A Std, monospace;
+        text-align: center;
+        color:#fd3636;
+        margin-bottom: 10px;
+      }
+      .bottoni{
+        color:#fd3636;
+        width: 125px; 
+        height: 45px; 
+        font-size: 20px; 
+        font-family: OCR A Std, monospace;
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border-color: #fd3636;
+        border-radius: 7px;
+        cursor: pointer;
+        outline: none;
+        margin-bottom: 3px;
+      }
+      .bottoni:hover{
+        background-color: #fd3636;
+        color: white;
+      }
+      .textbox{
+        background-color: #1F1F1F;
+        border-color: #fd3636;
+        border-radius: 7px;
+        font-family:OCR A Std, monospace ;
+        font-size: 20px;
+        color: #fd3636;
+      }
+      #formlogin{
+        text-align: center;
+        color: #fd3636;
+        font-family: OCR A Std, monospace;
+        font-size: 20px;
+      }
+    </style>
+    <title>Flask Intro - login page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Please login</h1>
+      <br>
+      <form id="formlogin"action="" method="post">
+        <input type="text" class="textbox" placeholder="Username" name="username" value="{{
+          request.form.username }}">
+         <input type="password" class="textbox" placeholder="Password" name="password" value="{{
+          request.form.password }}">
+        <input class="bottoni" type="submit" value="Login">
+      </form>
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+      {% endif %}
+    </div>
+  </body>
+</html>

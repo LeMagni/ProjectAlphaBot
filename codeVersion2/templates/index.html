@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body{
+                background-color: #1F1F1F;
+            }
+            h1{
+                font-size: 100px; 
+                font-family: OCR A Std, monospace;
+                text-align: center;
+                color:#fd3636;
+                margin-bottom: 10px;
+            }
+            h2{
+                font-size: 30px; 
+                font-family: OCR A Std, monospace;
+                text-align: center;
+                color:#fd3636;
+                margin-bottom: 10px;
+            }
+            .tasti{
+                text-align: center;
+            }
+            .bottoni{
+                color:#fd3636;
+                width: 125px; 
+                height: 45px; 
+                font-size: 20px; 
+                font-family: OCR A Std, monospace;
+                background-color: Transparent;
+                background-repeat:no-repeat;
+                border-color: #fd3636;
+                border-radius: 7px;
+                cursor: pointer;
+                outline: none;
+                margin-bottom: 3px;
+            }
+            .bottoni:hover{
+                background-color: #fd3636;
+                color: white;
+            }
+            #cpForm{
+                text-align: center;
+                color: #fd3636;
+                font-family: OCR A Std, monospace;
+                font-size: 20px;
+            }
+            #cp{
+                background-color: #1F1F1F;
+                border-color: #fd3636;
+                border-radius: 7px;
+                font-family:OCR A Std, monospace ;
+                font-size: 20px;
+                color: #fd3636;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>ALPHABOT CONTROLLER</h1>
+        <form method="post">
+            <div class="tasti">    
+                <input type="submit" class="bottoni" value="left" name="left"/>
+                <input type="submit" class="bottoni" value="forward" name="forward"/>
+                <input type="submit" class="bottoni" value="right" name="right"/>
+            </div>
+            <div class="tasti">
+                <input type="submit" class="bottoni" value="backward" name="backward">
+            </div>
+        </form>
+        <form method="post" id="cpForm">
+            Comando personalizzato: 
+            <input type="text" id="cp" name="textcp" value="{{request.form.textcp}}">
+            <input type="submit" class="bottoni" value="conferma" name="conf">
+        </form>
+        <h2>Elenco comandi personalizzati:<br>
+        ZigZag<br>
+        InversioneU<br>
+        Sfondamento<br>
+        Singhiozzo<br>
+        </h2>
+    </body>
+</html>
