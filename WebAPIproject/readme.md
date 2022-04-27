@@ -21,18 +21,3 @@ Per lo sviluppo di questo progetto abbiamo instaurato una connessione TCP client
 <img src="../IMG/WebAPIalphabot.png" width="700">
 
 Nella prima pagina del sito bisogna loggarsi in modo che ogni comando che venga mandato sia salvato su un Database e sia riconducibile all'utente che l'ha effettuato.
-
-<img src="IMG/login.jpeg" width="250">
-
-
-<img src="IMG/reg.jpeg" width="350">
-
-Sul sito di controllo sono presenti i classici pulsanti di movimento (Avanti, Indietro, Destra, Sinistra) 
-che tramite la connessione TCP inviasse al robot che movimento fare.
-In un secondo momento abbiamo creato una seconda tabella sul DB in cui abbiamo inserito dei comandi composti
-formati da una serie di movimenti semplici.
-
-<img src="IMG/sito.jpeg" width="1000">
-
-
-<img src="IMG/movPers.jpeg" width="300">
