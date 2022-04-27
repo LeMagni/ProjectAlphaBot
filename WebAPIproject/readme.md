@@ -1,5 +1,5 @@
 ## Progetto ALPHA-BOT con WebAPI
-# Alpha-BOBE
+# AlphAPI-BOBE
 
 ### TEAM:
 
